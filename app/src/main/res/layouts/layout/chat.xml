@@ -30,7 +30,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Bubu pussy1"
-        android:fontFamily="@font/lato_bold"
         android:textColor="@color/colorPrimary"
         android:layout_marginTop="5dp"
         android:textSize="12sp"
@@ -41,7 +40,6 @@
             android:layout_height="wrap_content"
             android:text="11:00 PM"
             android:gravity="end"
-            android:fontFamily="@font/lato"
             android:textSize="10sp"
             android:layout_margin="8dp"/>
 
@@ -51,8 +49,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hi po bubu ka ba?"
-        android:fontFamily="@font/lato"/>
+        android:text="Hi po bubu ka ba?"/>
 
     </LinearLayout>
 
