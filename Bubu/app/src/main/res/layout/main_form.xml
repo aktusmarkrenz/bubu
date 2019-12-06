@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"/>
+
+    <TextView
+        android:id="@+id/tvChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="20dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/chat"/>
+
+                <include layout="@layout/chat"/>
+                <include layout="@layout/chat"/>
+                <include layout="@layout/chat"/>
+                <include layout="@layout/chat"/>
+                <include layout="@layout/chat"/>
+                <include layout="@layout/chat"/>
+                <include layout="@layout/chat"/>
+                <include layout="@layout/chat"/>
+                <include layout="@layout/chat"/>
+                <include layout="@layout/chat"/>
+                <include layout="@layout/chat"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
