@@ -22,12 +22,12 @@
 
         <TextView
             android:id="@+id/login_txt"
-            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Please login to continue"
-            android:layout_marginBottom="80dp"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="-10dp"
+            android:layout_marginBottom="80dp"
+            android:text="Please login to continue"
             android:textColor="#9E9E9E"/>
 
         <EditText
@@ -71,7 +71,8 @@
             fancy:fb_textColor="#FFFFFF"
             fancy:fb_radius="25dp"
             fancy:fb_defaultColor="@color/colorPrimary"
-            fancy:fb_focusColor="#00897B"/>
+            fancy:fb_focusColor="#00897B"
+            fancy:fb_textFontRes="@font/lato_bold"/>
 
     </LinearLayout>
 
