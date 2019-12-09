@@ -12,11 +12,9 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.lang.reflect.Type;
-
 import mehdi.sakout.fancybuttons.FancyButton;
 
-public class loginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     //Fonts
     Typeface lato_normal;
@@ -89,12 +87,12 @@ public class loginActivity extends AppCompatActivity {
         login_btn = findViewById(R.id.login_btn);
         login_btn.setCustomTextFont("Monoround.otf");
         login_btn.setTextSize(20);
-        login_btn.setOnClickListener((view)-> startActivity(new Intent(this, mainActivity.class)));
+        login_btn.setOnClickListener((view)-> startActivity(new Intent(this, MainActivity.class)));
     }
 
     public void login(View view) {
         //Toast.makeText(this, "Yeah", Toast.LENGTH_SHORT).show();
-//        Intent main = new Intent(this, mainActivity.class);
+//        Intent main = new Intent(this, MainActivity.class);
 //        startActivity(main);
     }
 

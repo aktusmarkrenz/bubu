@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class mainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     Typeface monoround;
     TextView chatLabel;
     ImageView chatFragmentButton, contactFragmentButton;
