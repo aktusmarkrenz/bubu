@@ -62,8 +62,32 @@ public class loginActivity extends AppCompatActivity {
 //        password = findViewById(R.id.et_passord);
 
         login_txt = findViewById(R.id.login_txt);
-        login_txt.setTypeface(lato_normal);
         login_txt.setTextSize(16);
+        login_txt.setTypeface(lato_normal);
+
+        forgot_txt = findViewById(R.id.forgot_link);
+        forgot_txt.setTextSize(16);
+        forgot_txt.setTypeface(lato_normal);
+
+        register_txt = findViewById(R.id.register_txt);
+        register_txt.setTextSize(16);
+        register_txt.setTypeface(lato_normal);
+
+        register_link = findViewById(R.id.register_link);
+        register_link.setTextSize(16);
+        register_link.setTypeface(lato_normal);
+
+        username_txtbox = findViewById(R.id.username_txtbox);
+        username_txtbox.setTextSize(16);
+        username_txtbox.setTypeface(lato_normal);
+
+        password_txtbox = findViewById(R.id.password_txtbox);
+        password_txtbox.setTextSize(16);
+        password_txtbox.setTypeface(lato_normal);
+
+        login_btn = findViewById(R.id.login_btn);
+        login_btn.setCustomTextFont("Monoround.otf");
+        login_btn.setTextSize(20);
     }
 
     public void login(View view) {
