@@ -2,6 +2,7 @@ package com.example.bubu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -88,6 +89,7 @@ public class loginActivity extends AppCompatActivity {
         login_btn = findViewById(R.id.login_btn);
         login_btn.setCustomTextFont("Monoround.otf");
         login_btn.setTextSize(20);
+        login_btn.setOnClickListener((view)-> startActivity(new Intent(this, mainActivity.class)));
     }
 
     public void login(View view) {
