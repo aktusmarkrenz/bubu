@@ -2,6 +2,7 @@ package com.example.bubu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -64,6 +65,8 @@ public class loginActivity extends AppCompatActivity {
         login_txt = findViewById(R.id.login_txt);
         login_txt.setTypeface(lato_normal);
         login_txt.setTextSize(16);
+        login_btn = findViewById(R.id.login_btn);
+        login_btn.setOnClickListener((view)-> startActivity(new Intent(this, mainActivity.class)));
     }
 
     public void login(View view) {

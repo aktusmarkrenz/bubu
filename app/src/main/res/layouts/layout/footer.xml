@@ -23,7 +23,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/chat"
-                android:layout_centerInParent="true"/>
+                android:layout_centerInParent="true"
+                android:onClick="selectedView"/>
 
        </RelativeLayout>
 
@@ -36,11 +37,14 @@
 
 
            <ImageView
+               android:id="@+id/contacts"
                android:layout_width="match_parent"
                android:layout_height="match_parent"
                android:layout_centerInParent="true"
                android:layout_marginTop="18dp"
-               android:src="@drawable/avatar"/>
+               android:src="@drawable/avatar"
+               android:clickable="true"
+               android:onClick="selectedView"/>
 
 
        </RelativeLayout>
@@ -60,6 +64,7 @@
                 android:layout_weight="1">
 
             <View
+                android:id="@+id/fragment_chat"
                 android:layout_width="match_parent"
                 android:layout_height="4dp"
                 android:background="#FFFFFF"/>
@@ -72,6 +77,7 @@
             android:layout_weight="1">
 
             <View
+                android:id="@+id/fragment_contacts"
                 android:layout_width="match_parent"
                 android:layout_height="4dp"
                 android:background="#FFFFFF"
