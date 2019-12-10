@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void selectedView(View select){
-        option1.setVisibility(View.VISIBLE);
+        option1.setVisibility( View.VISIBLE);
         option2.setVisibility(View.VISIBLE);
         if(select != chatFragmentButton) {
             option1.setVisibility(View.INVISIBLE);
