@@ -40,6 +40,9 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+                <include android:id="@+id/chat1"
+                    layout="@layout/chat"/>
+
                 <include layout="@layout/sample_chats"/>
                 <include layout="@layout/sample_chats"/>
                 <include layout="@layout/sample_chats"/>

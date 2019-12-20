@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="#000000">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="35dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/captureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        fancy:fb_textColor="#FFFFFF"
+        fancy:fb_radius="50dp"
+        fancy:fb_defaultColor="#FFFFFF"
+        fancy:fb_focusColor="#FFFFFFFF"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="25dp"
+        fancy:fb_text="">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/camera"
+            android:layout_margin="7dp"/>
+
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/captureButton"
+                fancy:fb_textColor="#FFFFFF"
+                fancy:fb_radius="50dp"
+                fancy:fb_text=""
+                fancy:fb_defaultColor="#FFFFFF"
+                fancy:fb_focusColor="#FFFFFFFF"
+                android:layout_centerInParent="true"
+                android:onClick="viewLastImage">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/gallery"
+                    android:layout_margin="2dp"/>
+
+            </mehdi.sakout.fancybuttons.FancyButton>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
