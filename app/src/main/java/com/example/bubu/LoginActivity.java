@@ -75,6 +75,7 @@ public class LoginActivity extends AppCompatActivity {
         register_link = findViewById(R.id.register_link);
         register_link.setTextSize(16);
         register_link.setTypeface(lato_normal);
+        register_link.setOnClickListener((view)-> startActivity(new Intent(this, RegistrationActivity.class)));
 
         username_txtbox = findViewById(R.id.username_txtbox);
         username_txtbox.setTextSize(16);
