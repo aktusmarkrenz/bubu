@@ -1,9 +1,11 @@
 package com.example.bubu;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
         option2 = findViewById(R.id.fragment_contacts);
         contactFragmentButton.setOnClickListener((this::selectedView));
         contactFragmentButton.setOnClickListener((this::selectedView));
+
+        LinearLayout chat1 = findViewById(R.id.chat1);
+        chat1.setOnClickListener(this::showChat);
+    }
+
+    private void showChat(View view){
+        startActivity(new Intent(this, ChatActivity.class));
     }
 
 
